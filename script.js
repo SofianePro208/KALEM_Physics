@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
        }
        // --- End of Scroll to Top Button Logic ---
 
+<script>
   document.querySelector(".contact-form").addEventListener("submit", function(event) {
     event.preventDefault(); // منع الإرسال الافتراضي
     var form = this;
@@ -236,6 +237,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }).catch(error => console.error("خطأ في الإرسال:", error));
   });
+</script>
+
 
 
 
