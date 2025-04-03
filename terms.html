@@ -205,19 +205,20 @@
         </section>
     </main>
 
-     <footer class="site-footer">
-        <div class="container">
-             <div class="footer-content">
+    <footer class="site-footer">
+        <div class="container"> <!-- Container for main footer content -->
+            <div class="footer-content">
                 <div class="footer-about">
                     <h4>حول KALEM Physics</h4>
-                     <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
+                    <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
                 </div>
                 <div class="footer-links">
-                     <h4>روابط مهمة</h4>
+                    <h4>روابط مهمة</h4>
                     <ul>
                         <li><a href="privacy.html">سياسة الخصوصية</a></li>
                         <li><a href="terms.html">شروط الاستخدام</a></li>
                         <li><a href="support.html">التواصل والدعم</a></li>
+                        
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -227,27 +228,29 @@
                     <a href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
-            <hr>
-        </div>
-         <!-- Copyright outside container -->
+            <hr> <!-- Divider still inside container -->
+        </div> <!-- End of Container -->
+
+        <!-- Copyright outside container, direct child of footer -->
         <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
     </footer>
 
-    <!-- Search Overlay -->
-    <div id="searchOverlay" class="search-overlay">
-       <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">&times;</button>
-       <div class="search-overlay-content">
-           <form action="#" method="get" class="search-form">
-               <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
-               <button type="submit" class="search-submit-btn" aria-label="Submit Search">
-                   <i class="fas fa-search"></i>
-               </button>
-           </form>
-           <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
-       </div>
-   </div>
-   <!-- End Search Overlay -->
+     <!-- Search Overlay -->
+     <div id="searchOverlay" class="search-overlay">
+        <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+        <div class="search-overlay-content">
+            <form action="#" method="get" class="search-form">
+                <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+        </div>
+    </div>
+    <!-- End Search Overlay -->
 
+    <!-- Link to JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

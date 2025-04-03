@@ -823,11 +823,11 @@ body.dark-mode .search-submit-btn {
     transform: translateY(0);
 }
 
- --- 12. Document List Styles --- 
+/* --- 12. Document List Styles --- */
 .document-list {
     list-style: none;
     padding: 0;
-    margin-top: var(--spacing-8)
+    margin-top: var(--spacing-8);
 }
 .document-list li {
     background-color: var(--clr-surface);
@@ -845,11 +845,11 @@ body.dark-mode .search-submit-btn {
     font-weight: var(--fw-medium);
     font-size: var(--fs-lg);
     display: inline-flex; /* Align icon and text */
-     align-items: center;
+    align-items: center;
     gap: var(--spacing-3);
     color: var(--clr-text-primary); /* Make link darker */
-     margin-bottom: var(--spacing-1); /* Space before description */
- }
+    margin-bottom: var(--spacing-1); /* Space before description */
+}
  .document-list a:hover {
      color: var(--clr-primary-600); /* Use primary color on hover */
  }
@@ -869,12 +869,7 @@ body.dark-mode .document-list a:hover {
     color: var(--clr-text-secondary);
     margin-bottom: 0;
     padding-right: 2.5em; /* Indent description to align with text (approx icon width + gap) */
-} 
-
-
-
-
-
+}
 
 
 /* --- 13. Responsive Adjustments --- */
