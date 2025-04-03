@@ -191,4 +191,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // --- End of Smooth Scroll for Hero CTA Button ---
 
+       // --- Scroll to Top Button Logic ---
+       const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+       const scrollThreshold = 300; // Pixels scrolled down before button appears
+   
+       if (scrollToTopBtn) {
+           // Function to show/hide button based on scroll position
+           const checkScrollPosition = () => {
+               if (window.scrollY > scrollThreshold) {
+                   scrollToTopBtn.classList.add('show-scroll');
+               } else {
+                   scrollToTopBtn.classList.remove('show-scroll');
+               }
+           };
+   
+           // Initial check in case the page loads already scrolled down
+           checkScrollPosition();
+   
+           // Listen for scroll events
+           window.addEventListener('scroll', checkScrollPosition);
+   
+           // Listen for click event on the button
+           scrollToTopBtn.addEventListener('click', () => {
+               window.scrollTo({
+                   top: 0,
+                   behavior: 'smooth'
+               });
+           });
+       }
+       // --- End of Scroll to Top Button Logic ---
+
+
+
+
 }); // End of DOMContentLoaded listener
