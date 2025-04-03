@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوثائق البيداغوجية - KALEM Physics</title>
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                 <a href="index.html"><i class="fas fa-atom"></i> KALEM Physics</a>
+            </div>
+             <nav class="main-nav">
+                <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search"><i class="fas fa-search"></i></button>
+                <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+                <ul id="main-menu">
+                   <li><a href="index.html">الرئيسية</a></li>
+                   <li><a href="about.html">عن الموقع</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+             <div class="container">
+                 <h1>الوثائق البيداغوجية للمعلمين</h1>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2>اختيار السنة الدراسية</h2>
+                <p>يرجى اختيار السنة الدراسية لعرض الموارد المتاحة لها.</p>
+
+                <div class="navigation-list"> <!-- New class for styling links -->
+                    <a href="./pedagogy/pedagogy-year1.html" class="nav-item-link">
+                        <i class="fas fa-layer-group"></i>
+                        <span>السنة الأولى ثانوي</span>
+                        <i class="fas fa-chevron-left arrow-icon"></i> <!-- Arrow indicates navigation -->
+                    </a>
+                    <a href="./pedagogy/pedagogy-year2.html" class="nav-item-link">
+                        <i class="fas fa-layer-group"></i>
+                        <span>السنة الثانية ثانوي</span>
+                         <i class="fas fa-chevron-left arrow-icon"></i>
+                    </a>
+                    <a href="./pedagogy/pedagogy-year3.html" class="nav-item-link">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>السنة الثالثة ثانوي (بكالوريا)</span>
+                         <i class="fas fa-chevron-left arrow-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"> <!-- Container for main footer content -->
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>حول KALEM Physics</h4>
+                    <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط مهمة</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                        <li><a href="support.html">التواصل والدعم</a></li>
+                        <li><a href="admin.html">لوحة التحكم</a></li> <!-- **** السطر المضاف **** -->
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا وتواصل</h4>
+                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <hr> <!-- Divider still inside container -->
+        </div> <!-- End of Container -->
+
+        <!-- Copyright outside container, direct child of footer -->
+        <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
+    </footer>
+
+     <!-- Search Overlay -->
+     <div id="searchOverlay" class="search-overlay">
+        <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+        <div class="search-overlay-content">
+            <form action="#" method="get" class="search-form">
+                <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+        </div>
+    </div>
+    <!-- End Search Overlay -->
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
