@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التواصل والدعم - KALEM Physics</title>
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-atom"></i>
+                    KALEM Physics
+                </a>
+            </div>
+            <nav class="main-nav">
+                 <!-- Dark Mode Toggle Button -->
+                <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                 <!-- Search Toggle Button -->
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                 <!-- Hamburger Menu Toggle Button -->
+                <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Main Navigation List -->
+                <ul id="main-menu">
+                   <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <!-- Page Header -->
+        <section class="page-header">
+             <div class="container">
+                 <h1>يسعدنا تواصلك معنا</h1>
+            </div>
+        </section>
+
+        <!-- Support Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <h2>كيف يمكننا المساعدة؟</h2>
+                <p>
+                    فريق KALEM Physics جاهز دائمًا للإجابة على استفساراتكم، استقبال اقتراحاتكم القيمة، أو مساعدتكم في حل أي مشكلة فنية قد تواجهونها أثناء استخدام المنصة. لا تترددوا في التواصل معنا عبر القنوات المفضلة لديكم.
+                </p>
+
+                <h2>قنوات التواصل</h2>
+                <div class="contact-info">
+                     <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:support@kalemphysics.example.com">support@kalemphysics.example.com</a> (للإستفسارات العامة والدعم الفني)</p>
+                     <p><i class="fab fa-facebook-square"></i> <strong>صفحتنا على فيسبوك:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics</a> (تابع آخر الأخبار والمناقشات)</p>
+                     <p><i class="fab fa-youtube-square"></i> <strong>قناتنا على يوتيوب:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Channel</a> (شروحات فيديو وتجارب)</p>
+                     <p><i class="fab fa-telegram"></i> <strong>حسابنا على تيليجرام:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Telegram</a> (للتحديثات السريعة والتواصل المباشر)</p>
+                </div>
+
+                 <h2>الإبلاغ عن مشكلة فنية</h2>
+                 <p>
+                     في حال واجهت أي صعوبة تقنية، يرجى محاولة تزويدنا بأكبر قدر ممكن من التفاصيل (مثل نوع المشكلة، الصفحة التي ظهرت فيها، نوع جهازك ومتصفحك، مع لقطة شاشة إن أمكن) وإرسالها عبر البريد الإلكتروني للدعم الفني. هذا يساعدنا على تشخيص المشكلة وحلها بسرعة أكبر.
+                 </p>
+
+                 <h2>نموذج الاتصال السريع</h2>
+                 <form action="#" method="post" class="contact-form"> <!-- Configure form action -->
+                    <div>
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">الموضوع</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                     <div>
+                        <label for="message">نص الرسالة</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                       <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                    </button>
+                 </form>
+                 <p><small>ملاحظة: نموذج الاتصال هذا هو للعرض فقط ولن يعمل بدون برمجة خلفية.</small></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"> <!-- Container for main footer content -->
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>حول KALEM Physics</h4>
+                    <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط مهمة</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                        <li><a href="support.html">التواصل والدعم</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا وتواصل</h4>
+                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <hr> <!-- Divider still inside container -->
+        </div> <!-- End of Container -->
+
+
+    </footer>
+
+    <center>
+        <!-- Copyright outside container, direct child of footer -->
+        <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
+    </center>
+    
+     <!-- Search Overlay -->
+     <div id="searchOverlay" class="search-overlay">
+        <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+        <div class="search-overlay-content">
+            <form action="#" method="get" class="search-form">
+                <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+        </div>
+    </div>
+    <!-- End Search Overlay -->
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

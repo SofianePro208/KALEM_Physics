@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALEM Physics - منصة تعليمية حديثة</title>
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons (Version 6.x+) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-atom"></i>
+                    KALEM Physics
+                </a>
+            </div>
+            <nav class="main-nav">
+                 <!-- Dark Mode Toggle Button -->
+                <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <!-- Search Toggle Button -->
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <!-- Hamburger Menu Toggle Button -->
+                <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Main Navigation List -->
+                <ul id="main-menu">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="about.html">عن الموقع</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>استكشف عالم الفيزياء بسهولة ومتعة</h1>
+                <p>منصتك الشاملة لدروس واختبارات فيزياء المرحلة الثانوية، مصممة لتجربة تعلم تفاعلية وحديثة.</p>
+                <!-- Button with ID for animation and href for smooth scroll -->
+                <a href="#featuresSection" class="btn btn-primary" id="ctaButton">
+                    <i class="fas fa-rocket"></i>
+                    ابدأ رحلتك الآن
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section - Added ID for scroll target -->
+        <section class="features" id="featuresSection">
+            <div class="container">
+                <h2>ما نقدمه لـ <span>طلابنا ومعلمينا</span></h2>
+                <div class="features-grid">
+                    <!-- Feature Item 1 (Student) -->
+                    <div class="feature-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-book-open-reader"></i>
+                        </div>
+                        <h3>دروس تفصيلية وشاملة</h3>
+                        <p>شروحات معمقة ومنظمة لكل وحدات المنهج الدراسي مدعومة بأمثلة وتطبيقات عملية.</p>
+                    </div>
+                    <!-- Feature Item 2 (Student) -->
+                    <div class="feature-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-vial-circle-check"></i>
+                        </div>
+                        <h3>اختبارات تفاعلية مع الحل</h3>
+                        <p>نماذج اختبارات متنوعة، قصيرة ودورية، مع حلولها لتقييم الفهم وتعزيز التعلم.</p>
+                    </div>
+                    <!-- Feature Item 3 (Teacher) -->
+                    <div class="feature-item">
+                         <div class="icon-wrapper">
+                            <i class="fas fa-folder-tree"></i>
+                         </div>
+                         <h3><a href="pedagogy-docs.html">الوثائق البيداغوجية للمعلمين</a></h3> <!-- Link added -->
+                        <p>موارد قيمة تشمل مذكرات، توازيع سنوية، وخطط دروس لمساعدة الأستاذ في التحضير.</p>
+                    </div>
+                     <!-- Feature Item 4 (Teacher) -->
+                    <div class="feature-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>برمجيات وأدوات محاكاة</h3>
+                        <p>تجارب افتراضية وأدوات محاكاة تفاعلية لتوضيح المفاهيم الفيزيائية المعقدة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"> <!-- Container for main footer content -->
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>حول KALEM Physics</h4>
+                    <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط مهمة</h4>
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                        <li><a href="support.html">التواصل والدعم</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعنا وتواصل</h4>
+                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <hr> <!-- Divider still inside container -->
+        </div> <!-- End of Container -->
+
+
+    </footer>
+    <center>
+        <!-- Copyright outside container, direct child of footer -->
+        <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
+    </center>
+
+     <!-- Search Overlay -->
+     <div id="searchOverlay" class="search-overlay">
+        <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+        <div class="search-overlay-content">
+            <form action="#" method="get" class="search-form">
+                <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+        </div>
+    </div>
+    <!-- End Search Overlay -->
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
