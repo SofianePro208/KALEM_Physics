@@ -221,23 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
        }
        // --- End of Scroll to Top Button Logic ---
 
-<script>
-  document.querySelector(".contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // منع الإرسال الافتراضي
-    var form = this;
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(response => {
-      if (response.ok) {
-        window.location.href = "https://kalemphysics.netlify.app/thank-you.html"; // إعادة التوجيه
-      } else {
-        alert("حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقًا.");
-      }
-    }).catch(error => console.error("خطأ في الإرسال:", error));
-  });
-</script>
+
 
 
 
