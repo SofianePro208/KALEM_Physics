@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl"> <!-- lang="en", dir="rtl" kept for styling -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - KALEM Physics</title> <!-- English Title -->
+
+    <!-- Common Head Elements -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="site-header">
+         <!-- Standard Header Code (Remains in Arabic) -->
+          <div class="container"> <div class="logo"><a href="index.html"><i class="fas fa-atom"></i> KALEM Physics</a></div> <nav class="main-nav"> <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button> <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search"><i class="fas fa-search"></i></button> <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button> <ul id="main-menu"> <li><a href="index.html">الرئيسية</a></li> <li><a href="about.html">عن الموقع</a></li> </ul> </nav> </div>
+    </header>
+
+    <main>
+         <!-- Page Header -->
+        <section class="page-header">
+             <div class="container">
+                 <h1>Contact & Support</h1> <!-- English Header -->
+            </div>
+        </section>
+
+        <!-- Support Content Section -->
+        <section class="content-section">
+            <div class="container" style="text-align: left; direction: ltr;"> <!-- Force LTR for content section -->
+                <h2>Get In Touch</h2>
+                <p>
+                    We're here to help! If you have any questions, suggestions, or encounter technical issues while using the platform, please don't hesitate to contact us through the following channels:
+                </p>
+
+                <h2>Contact Channels</h2>
+                <div class="contact-info">
+                     <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:support@kalemphysics.example.com">support@kalemphysics.example.com</a> (For general inquiries and technical support)</p>
+                     <p><i class="fab fa-facebook-square"></i> <strong>Facebook Page:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics</a> (Follow for news and discussions)</p>
+                     <p><i class="fab fa-youtube-square"></i> <strong>YouTube Channel:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Channel</a> (Video explanations and experiments)</p>
+                     <p><i class="fab fa-telegram"></i> <strong>Telegram Account:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Telegram</a> (For quick updates and direct contact)</p>
+                </div>
+
+                 <h2>Technical Support</h2>
+                 <p>
+                     If you encounter any technical difficulties or problems accessing content, please try to provide us with as much detail as possible (e.g., the nature of the problem, the page where it occurred, your device type and browser, and a screenshot if possible) via the technical support email. This helps us diagnose and resolve the issue more quickly. We strive to respond to all inquiries as soon as possible.
+                 </p>
+
+                 <h2>Or Send a Direct Message:</h2>
+                 <form action="https://formspree.io/f/YOUR_UNIQUE_FORM_ID" method="POST" class="contact-form"> <!-- Remember to update Formspree ID -->
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Your Email (for reply)</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                     <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea> <!-- Added placeholder -->
+                    </div>
+                     <!-- Optional hidden fields for Formspree -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+                    <button type="submit" class="btn btn-primary">
+                       <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                 </form>
+                 <p><small>Note: This contact form uses a secure third-party service for email delivery. The form itself will not function without proper setup (e.g., Formspree activation).</small></p>
+
+            </div>
+        </section>
+    </main>
+
+     <footer class="site-footer">
+         <!-- Standard Footer Code (Remains in Arabic) -->
+         <div class="container"> <div class="footer-content"><div class="footer-about"><h4>حول KALEM Physics</h4><p>...</p></div><div class="footer-links"><h4>روابط مهمة</h4><ul><li>...</li></ul></div><div class="footer-social"><h4>تابعنا وتواصل</h4>...</div></div> <hr> </div>
+         <p class="copyright">KALEM Physics 2025. All rights reserved ©<br><span class="footer-legal-links"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></span></p>
+        <div class="footer-social footer-social-bottom"><h4>تابعنا وتواصل</h4>...</div>
+     </footer>
+
+     <div id="searchOverlay" class="search-overlay">...</div>
+     <script src="script.js"></script>
+</body>
+</html>
