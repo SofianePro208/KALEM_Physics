@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الاختبارات التفاعلية - KALEM Physics</title>
+    <title>الاختبارات والفروض - KALEM Physics</title> <!-- Simplified Title -->
 
     <!-- Common Head Elements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,39 +14,72 @@
 </head>
 <body>
     <header class="site-header">
-        <!-- Standard Header Code -->
-         <div class="container"> <div class="logo"><a href="index.html"><i class="fas fa-atom"></i> KALEM Physics</a></div> <nav class="main-nav"> <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button> <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search"><i class="fas fa-search"></i></button> <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button> <ul id="main-menu"> <li><a href="index.html">الرئيسية</a></li> <li><a href="about.html">عن الموقع</a></li> </ul> </nav> </div>
-    </header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-atom"></i>
+                    KALEM Physics
+                </a>
+            </div>
+            <nav class="main-nav">
+                 <!-- Dark Mode Toggle Button -->
+                <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <!-- Search Toggle Button 
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search">
+                    <i class="fas fa-search"></i>
+                </button> -->
+                <!-- Hamburger Menu Toggle Button -->
+                <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Main Navigation List -->
+                <ul id="main-menu">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="support.html">التواصل والدعم</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
 
     <main>
         <section class="page-header">
              <div class="container">
-                 <h1>الاختبارات والفروض التفاعلية</h1>
+                 <h1>الاختبارات والفروض</h1>
             </div>
         </section>
 
         <section class="content-section">
             <div class="container">
                 <h2>اختبر فهمك للمادة</h2>
-                <p>تجد هنا مجموعة من الاختبارات والفروض التفاعلية (أو نماذج PDF) لتقييم مستواك ومراجعة المفاهيم الأساسية. اختر السنة الدراسية للبدء.</p>
+                <p>تجد هنا نماذج فروض واختبارات لمختلف المستويات، بالإضافة إلى مواضيع بكالوريا سابقة مع الحلول المقترحة. اختر السنة الدراسية للمتابعة.</p>
 
                 <div class="navigation-list">
-                    <a href="quizzes-year1.html" class="nav-item-link">
+                    <!-- Year 1 - Coming Soon -->
+                    <div class="nav-item-link disabled"> <!-- Added 'disabled' class -->
                         <i class="fas fa-layer-group"></i>
                         <span>السنة الأولى ثانوي</span>
-                        <i class="fas fa-chevron-left arrow-icon"></i>
-                    </a>
-                    <a href="quizzes-year2.html" class="nav-item-link">
+                        <span class="status-badge coming-soon">قريباً</span> <!-- Coming soon badge -->
+                    </div>
+                    <!-- Year 2 - Coming Soon -->
+                     <div class="nav-item-link disabled">
                         <i class="fas fa-layer-group"></i>
                         <span>السنة الثانية ثانوي</span>
-                         <i class="fas fa-chevron-left arrow-icon"></i>
-                    </a>
+                        <span class="status-badge coming-soon">قريباً</span>
+                    </div>
+                    <!-- Year 3 - Active Link -->
                     <a href="quizzes-year3.html" class="nav-item-link">
                         <i class="fas fa-user-graduate"></i>
                         <span>السنة الثالثة ثانوي (بكالوريا)</span>
                          <i class="fas fa-chevron-left arrow-icon"></i>
                     </a>
                 </div>
+
+                 <p class="coming-soon-notice">
+                     <i class="fas fa-info-circle"></i> نعمل حالياً على إعداد ورفع الفروض والاختبارات الخاصة بالسنة الأولى والثانية ثانوي. تابع قسم الإشعارات لمعرفة آخر التحديثات!
+                 </p>
             </div>
         </section>
     </main>
@@ -54,7 +87,8 @@
     <footer class="site-footer">
         <!-- Standard Footer Code -->
         <div class="container"> <div class="footer-content">...</div> <hr> </div>
-        <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
+        <p class="copyright">KALEM Physics 2025. All rights reserved ©<br><span class="footer-legal-links">...</span></p>
+        <div class="footer-social footer-social-bottom">...</div>
     </footer>
 
      <div id="searchOverlay" class="search-overlay">...</div>
