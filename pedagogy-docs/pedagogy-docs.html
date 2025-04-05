@@ -78,38 +78,69 @@
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container"> <!-- Container for main footer content -->
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h4>حول KALEM Physics</h4>
-                    <p>منصة تعليمية حديثة تهدف لتبسيط الفيزياء وجعلها مادة ممتعة ومفهومة لطلاب الثانوية، مع دعم متكامل للمعلمين.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>روابط مهمة</h4>
-                    <ul>
-                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><a href="terms.html">شروط الاستخدام</a></li>
-                        <li><a href="support.html">التواصل والدعم</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>تابعنا وتواصل</h4>
-                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                    <a href="#" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
-                </div>
+</footer>
+<center>
+    <!-- Copyright outside container, direct child of footer -->
+     <div>
+        <p><small><strong>© KALEM Physics 2025.All rights reserved</strong></small></p>
+   </div>
+</center>
+<center>
+<div class="footer-legal-links"> <!-- Optional wrapper for specific styling -->
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
+</div>
+</center>
+<center>
+        <!-- Social Block ADDED HERE -->
+        <div class="footer-social footer-social-bottom"> <!-- Added extra class -->
+            <a href="https://wa.me/message/WGLSISTQWPALO1" aria-label="Whatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/sofianeklm" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdkakem@liberty.edu" aria-label="Mail" target="_blank" rel="noopener noreferrer"><i class="fas fa-at"></i></a>                              </div>
+        <!-- End of Added Social Block -->
+</center>
+
+ <!-- Search Overlay -->
+ <div id="searchOverlay" class="search-overlay">
+    <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+    <div class="search-overlay-content">
+        <form action="#" method="get" class="search-form">
+            <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+            <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+    </div>
+</div>
+<!-- End Search Overlay -->
+<!-- ... (Previous content including Search Overlay) ... -->
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="الصعود للأعلى" title="الصعود للأعلى">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- End Scroll to Top Button -->
+
+    <!-- Under Construction Modal -->
+    <div id="constructionModalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <button class="icon-btn close-modal-btn" id="closeConstructionModalBtn" aria-label="إغلاق">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fas fa-person-digging"></i> <!-- Construction Icon -->
             </div>
-            <hr> <!-- Divider still inside container -->
-        </div> <!-- End of Container -->
-
-
-    </footer>
-    <center>
-        <!-- Copyright outside container, direct child of footer -->
-        <p class="copyright">KALEM Physics 2025. All rights reserved ©</p>
-    </center>
+            <h3>قيد الإنشاء والتطوير</h3>
+            <p>
+                نعمل بجد حاليًا لإعداد ورفع الدروس التفصيلية لهذه المنصة. ستكون متاحة قريبًا!
+                <br>
+                شكرًا لصبركم وتفهمكم.
+            </p>
+            <button class="btn btn-secondary close-modal-btn-bottom" id="closeConstructionModalBtnBottom">حسناً</button>
+        </div>
+    </div>
+    <!-- End Under Construction Modal -->
 
      <!-- Search Overlay -->
      <div id="searchOverlay" class="search-overlay">
