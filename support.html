@@ -102,13 +102,12 @@
        <!-- Ensure textarea has name="message" -->
        <textarea id="message" name="message" rows="6" required></textarea>
    </div>
-   <!-- Optional: Add a hidden field for redirection after success -->
-   <!-- Create a simple thank-you.html page -->
-   <input type="hidden" name="_next" value="thank-you.html">
-   <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+    <!-- **** أضف هذا الحقل المخفي **** -->
+    <input type="hidden" name="_next" value="https://kalemphysics.netlify.app/thank-you.html"> 
+       <!-- **** نهاية الحقل المخفي **** -->
 
-   <!-- Optional: Add a honeypot field for basic spam prevention -->
-   <input type="text" name="_gotcha" style="display:none">
+    <!-- حقل Honeypot الاختياري -->
+    <input type="text" name="_gotcha" style="display:none">
 
    <button type="submit" class="btn btn-primary">
       <i class="fas fa-paper-plane"></i> إرسال الرسالة
