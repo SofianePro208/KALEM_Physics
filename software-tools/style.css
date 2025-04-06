@@ -1482,11 +1482,22 @@ body.dark-mode .platform-badge.mac { background-color: #999; }
 .license-badge.free {
     background-color: var(--clr-primary-500);
 }
+
+/* --- Refined Paid Badge Style (Using Primary Color Border) --- */
 .license-badge.paid {
-     background-color: var(--clr-accent-500);
+    background-color: var(--clr-accent-500); /* Accent background (e.g., Pink/Magenta) */
+    color: var(--clr-surface-light);         /* Light text */
+    /* Use Primary color for the border */
+    border-color: var(--clr-primary-500);    /* e.g., Main Teal */
 }
+body.dark-mode .license-badge.paid {
+    background-color: var(--clr-accent-500); /* Darker Accent background */
+    color: var(--clr-secondary-500);     /* Light text */
+     /* Use a lighter Primary color for the border in dark mode */
+    border-color: var(--clr-primary-400);    /* e.g., Lighter Teal */
+}
+/* --- End Refined Paid Badge Style --- */
 body.dark-mode .license-badge.free { background-color: var(--clr-primary-600); }
-body.dark-mode .license-badge.paid { background-color: var(--clr-accent-600); }
 
 /* Responsive adjustments for software list */
 @media (max-width: 767px) {
@@ -1954,6 +1965,105 @@ body.dark-mode .assessment-category h3 {
 .assessment-category:last-of-type .document-list { /* Target list in last category */
      margin-top: var(--spacing-4); /* Ensure standard spacing */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Additions/Adjustments for Software Download Page --- */
+
+.software-download-details {
+    /* ... existing styles ... */
+}
+
+/* Updated .software-intro */
+.software-intro {
+    text-align: right; /* Align description to the right for RTL */
+    border-bottom: 1px solid var(--clr-border);
+    padding-bottom: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+/* NEW: Styles for the header wrapper */
+.software-intro-header {
+    display: flex;
+    align-items: center; /* Vertically align logo and title */
+    gap: var(--spacing-5); /* Space between logo and title */
+    margin-bottom: var(--spacing-4); /* Space below logo/title block */
+}
+
+
+/* Updated .software-page-logo */
+.software-page-logo {
+    max-width: 64px; /* Adjust size as needed */
+    max-height: 64px;
+    /* margin-bottom: var(--spacing-4); */ /* Remove bottom margin */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Update Placeholder Icon styles if used */
+.software-icon-placeholder {
+    font-size: 3rem;
+    /* margin-bottom: var(--spacing-4); */ /* Remove bottom margin */
+    width: 64px; /* Match logo size */
+    height: 64px;
+     /* display: inline-flex; */ /* Change display if needed or remove if handled by flex */
+     /* ... other placeholder styles ... */
+}
+
+/* Updated .software-intro h2 */
+.software-intro h2 {
+    font-size: var(--fs-3xl);
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+    color: var(--clr-text-primary);
+    text-align: right; /* Ensure title aligns right */
+    flex-grow: 1; /* Allow title to take space */
+}
+
+/* Updated .software-intro p */
+.software-intro p {
+    font-size: var(--fs-lg);
+    color: var(--clr-text-secondary);
+    max-width: none; /* Allow description to span width */
+    margin-left: 0; /* Reset auto margin */
+    margin-right: 0;
+    margin-bottom: 0; /* Remove bottom margin, spacing handled by parent */
+    text-align: right;
+}
+
+/* ... rest of the styles (.features-list, .requirements-list etc.) remain the same ... */
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .software-intro-header {
+        gap: var(--spacing-3); /* Reduce gap */
+        /* Optional: Stack on very small screens if needed */
+        /* flex-direction: column; */
+        /* text-align: center; */
+    }
+    .software-page-logo, .software-icon-placeholder {
+         max-width: 50px;
+         max-height: 50px;
+         /* margin-bottom: var(--spacing-2); */ /* Add margin if stacking */
+    }
+    .software-icon-placeholder { font-size: 2.5rem; width: 50px; height: 50px;}
+    .software-intro h2 {
+        font-size: var(--fs-2xl);
+         /* text-align: center; */ /* Center if stacking */
+    }
+    .software-intro p { font-size: var(--fs-base); }
+
+}
+
+
 
 
 

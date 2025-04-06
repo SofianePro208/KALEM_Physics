@@ -104,22 +104,25 @@
                                 </div>
                             </div>
                         </li>
-                         <li>
-                             <div class="software-header">
-                                 <!-- Placeholder for LibreOffice logo -->
-                                <i class="fas fa-file-alt software-icon-placeholder"></i>
-                                <a href="https://www.libreoffice.org/download/download/" target="_blank" rel="noopener noreferrer" class="software-title">LibreOffice</a>
+                        <li>
+                            <div class="software-header">
+                                <!-- Placeholder icon, you can find/create a logo if preferred -->
+                                <img src="images/7zip.png" alt="7Zip Logo" class="software-logo">
+                                <!-- Link to the NEW dedicated download page -->
+                                <a href="download-7zip.html" class="software-title">7Zip</a>
                             </div>
                              <div class="software-details">
-                                <p class="software-description">بديل مجاني ومفتوح المصدر لحزمة Microsoft Office، يوفر برامج مشابهة لـ Word, Excel, PowerPoint.</p>
+                                <p class="software-description">برنامج مجاني ومفتوح المصدر لضغط وأرشفة الملفات بنسبة ضغط عالية (خاصة لصيغة 7z)، ويدعم فك ضغط العديد من الصيغ الأخرى.</p>
                                 <div class="software-meta">
                                      <span class="badge platform-badge windows"><i class="fab fa-windows"></i> Windows</span>
-                                     <span class="badge platform-badge mac"><i class="fab fa-apple"></i> macOS</span>
-                                     <span class="badge platform-badge linux"><i class="fab fa-linux"></i> Linux</span>
-                                     <span class="badge license-badge free">مجاني</span>
+                                     <span class="badge platform-badge linux"><i class="fab fa-linux"></i> Linux (p7zip)</span> <!-- Command-line/GUI versions exist -->
+                                     <!-- Verify macOS support if needed -->
+                                     <span class="badge license-badge free">مجاني ومفتوح المصدر</span>
                                 </div>
                             </div>
                         </li>
+                         <!-- **** END OF ADDED 7-ZIP ENTRY **** -->
+                    </ul>
                         <!-- Add other productivity tools -->
                     </ul>
                 </div>
@@ -133,14 +136,14 @@
                         <li>
                             <div class="software-header">
                                 <!-- Placeholder for Scidot logo -->
-                                <i class="fas fa-superscript software-icon-placeholder"></i>
-                                <a href="http://www.scidot.com/" target="_blank" rel="noopener noreferrer" class="software-title">Scidot Math Physique</a>
+                                <img src="images/SciDot.png" alt="SciDot Logo" class="software-logo">
+                                <a href="download-scidot.html" target="_blank" rel="noopener noreferrer" class="software-title">Scidot Math Physique</a>
                             </div>
                             <div class="software-details">
                                 <p class="software-description">إضافة لبرنامج Microsoft Word تسهل كتابة المعادلات الرياضية والرموز الفيزيائية والكيميائية بشكل احترافي.</p>
                                 <div class="software-meta">
                                      <span class="badge platform-badge windows"><i class="fab fa-windows"></i> Windows (Word Add-in)</span>
-                                     <span class="badge license-badge paid">مدفوع (أو تجريبي)</span> <!-- Verify license -->
+                                     <span class="badge license-badge paid">مفعل</span> <!-- Verify license -->
                                 </div>
                             </div>
                         </li>
@@ -148,8 +151,8 @@
                          <li>
                             <div class="software-header">
                                 <!-- Placeholder for GeoGebra logo -->
-                               <i class="fas fa-shapes software-icon-placeholder"></i>
-                                <a href="https://www.geogebra.org/" target="_blank" rel="noopener noreferrer" class="software-title">GeoGebra</a>
+                                <img src="images/géogèbre.png" alt="GéoGèbre Logo" class="software-logo"> <!-- Add logo if available -->
+                                <a href="https://www.geogebra.org/download" target="_blank" rel="noopener noreferrer" class="software-title">GeoGebra</a>
                             </div>
                             <div class="software-details">
                                 <p class="software-description">برنامج مجاني للرياضيات والعلوم يتيح إنشاء رسوم بيانية، محاكاة هندسية، وجداول بيانات، مفيد في تصور بعض المفاهيم الفيزيائية.</p>
@@ -163,6 +166,24 @@
                                 </div>
                             </div>
                         </li>
+                    </li>
+                    <!-- **** ADDED MATHTYPE ENTRY **** -->
+                   <li>
+                       <div class="software-header">
+                           <!-- Assuming you have a logo file -->
+                           <img src="images/mathtype.svg" alt="MathType Logo" class="software-logo">
+                           <!-- Link to the NEW dedicated download page -->
+                           <a href="download-mathtype.html" class="software-title">MathType</a>
+                       </div>
+                        <div class="software-details">
+                           <p class="software-description">محرر معادلات رسومي قوي لإنشاء الرموز الرياضية المعقدة لإدراجها في المستندات وصفحات الويب وتطبيقات أخرى.</p>
+                           <div class="software-meta">
+                                <span class="badge platform-badge windows"><i class="fab fa-windows"></i> Windows</span>
+                                <span class="badge platform-badge windows"><i class="fab fa-windows"></i> Windows (Word Add-in)</span>
+                                <span class="badge license-badge paid">مفعل</span> <!-- Verify license -->
+                           </div>
+                       </div>
+                   </li>
                     </ul>
                 </div>
                 <!-- === End Category 3 === -->
@@ -174,41 +195,25 @@
                      <ul class="software-list">
                         <li>
                             <div class="software-header">
-                                <img src="images/logos/phet_logo.png" alt="PhET Logo" class="software-logo"> <!-- Add logo if available -->
-                                <a href="https://phet.colorado.edu/ar/" target="_blank" rel="noopener noreferrer" class="software-title">PhET Interactive Simulations</a>
+                                <img src="images/phet_logo.png" alt="PhET Logo" class="software-logo"> <!-- Add logo if available -->
+                                <a href="https://phet.colorado.edu/" target="_blank" rel="noopener noreferrer" class="software-title">PhET Interactive Simulations</a>
                             </div>
                             <div class="software-details">
                                 <p class="software-description">مجموعة ضخمة من المحاكاة التفاعلية المجانية في الفيزياء والكيمياء والرياضيات وعلوم الأرض والأحياء (جامعة كولورادو).</p>
                                 <div class="software-meta">
                                      <span class="badge platform-badge web"><i class="fas fa-globe"></i> Web (HTML5)</span>
-                                     <span class="badge platform-badge mobile"><i class="fas fa-mobile-alt"></i> Mobile App</span>
                                      <span class="badge license-badge free">مجاني</span>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="software-header">
-                                <!-- Placeholder for Algodoo logo -->
-                                <i class="fas fa-cubes software-icon-placeholder"></i>
-                                <a href="http://www.algodoo.com/" target="_blank" rel="noopener noreferrer" class="software-title">Algodoo</a>
-                            </div>
-                            <div class="software-details">
-                                <p class="software-description">صندوق رمل فيزيائي ثنائي الأبعاد يتيح لك إنشاء وبناء وتجربة سيناريوهات فيزيائية ممتعة وتعليمية.</p>
-                                <div class="software-meta">
-                                     <span class="badge platform-badge windows"><i class="fab fa-windows"></i> Win</span>
-                                     <span class="badge platform-badge mac"><i class="fab fa-apple"></i> Mac</span>
-                                      <span class="badge platform-badge mobile"><i class="fas fa-tablet-alt"></i> iPad</span>
-                                     <span class="badge license-badge free">مجاني</span>
-                                </div>
-                            </div>
-                        </li>
+
                         <!-- Add other simulation tools -->
                     </ul>
                 </div>
                 <!-- === End Category 4 === -->
 
                  <p style="margin-top: var(--spacing-10); font-size: var(--fs-sm); color: var(--clr-text-muted);">
-                    <strong>ملاحظة:</strong> الروابط المقدمة هي للمواقع الرسمية للبرامج (حيثما أمكن). يرجى دائماً التحقق من متطلبات النظام والتراخيص قبل التنزيل والاستخدام. KALEM Physics لا تتحمل مسؤولية البرامج المقدمة من أطراف ثالثة.
+                    <strong>ملاحظة:</strong> يرجى دائماً التحقق من متطلبات النظام والتراخيص قبل التنزيل والاستخدام. 
                  </p>
 
             </div>
