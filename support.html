@@ -79,39 +79,41 @@
 
 <!-- support.html -->
 
+<!-- support.html -->
+
 <h2>أو أرسل رسالة مباشرة:</h2>
-<!-- **** MODIFIED FORM TAG **** -->
-<form action="https://formspree.io/f/xnnpggad" method="POST" class="contact-form">
-  <div>
-       <label for="name">الاسم الكامل</label>
-       <!-- Ensure input has name="name" -->
-       <input type="text" id="name" name="name" required>
-   </div>
-   <div>
-       <label for="email">البريد الإلكتروني (للرد عليك)</label>
-       <!-- Ensure input has name="_replyto" for Formspree reply functionality -->
-       <input type="email" id="email" name="_replyto" required>
-   </div>
-   <div>
-       <label for="subject">الموضوع</label>
-        <!-- Ensure input has name="subject" -->
-       <input type="text" id="subject" name="subject" required>
-   </div>
+<!-- **** MODIFIED FORM TAG for Netlify **** -->
+<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form">
+    <!-- Add this hidden field for the honeypot -->
+    <p class="hidden" style="display: none;">
+        <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+    </p>
+
+    <!-- Add this hidden field REQUIRED by Netlify to identify the form -->
+     <input type="hidden" name="form-name" value="contact" />
+
+    <!-- Your Existing Form Fields (Ensure they have 'name' attributes) -->
     <div>
-       <label for="message">نص الرسالة</label>
-       <!-- Ensure textarea has name="message" -->
-       <textarea id="message" name="message" rows="6" required></textarea>
-   </div>
-    <!-- **** أضف هذا الحقل المخفي **** -->
-    <input type="hidden" name="_next" value="https://kalemphysics.netlify.app/thank-you.html"> 
-       <!-- **** نهاية الحقل المخفي **** -->
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="email">البريد الإلكتروني (للرد عليك)</label>
+        <!-- Using name="email" is fine for Netlify -->
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="subject">الموضوع</label>
+        <input type="text" id="subject" name="subject" required>
+    </div>
+     <div>
+        <label for="message">نص الرسالة</label>
+        <textarea id="message" name="message" rows="6" required placeholder="اكتب رسالتك هنا..."></textarea>
+     </div>
 
-    <!-- حقل Honeypot الاختياري -->
-    <input type="text" name="_gotcha" style="display:none">
-
-   <button type="submit" class="btn btn-primary">
-      <i class="fas fa-paper-plane"></i> إرسال الرسالة
-   </button>
+    <button type="submit" class="btn btn-primary">
+       <i class="fas fa-paper-plane"></i> إرسال الرسالة
+    </button>
 </form>
             </div>
         </section>
