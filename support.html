@@ -1,54 +1,86 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl"> <!-- lang="en", dir="rtl" kept for styling -->
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Support - KALEM Physics</title>
+    <title>التواصل والدعم - KALEM Physics</title>
 
-    <!-- Common Head Elements -->
+    <!-- Google Fonts (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header class="site-header">
-         <!-- Standard Header Code (Remains in Arabic) -->
-          <div class="container"> <div class="logo"><a href="index.html"><i class="fas fa-atom"></i> KALEM Physics</a></div> <nav class="main-nav"> <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button> <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search"><i class="fas fa-search"></i></button> <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button> <ul id="main-menu"> <li><a href="index.html">الرئيسية</a></li> <li><a href="about.html">عن الموقع</a></li> </ul> </nav> </div>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-atom"></i>
+                    KALEM Physics
+                </a>
+            </div>
+            <nav class="main-nav">
+                 <!-- Dark Mode Toggle Button -->
+                <button class="icon-btn dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <!-- Search Toggle Button 
+                <button class="icon-btn search-toggle" id="searchToggle" aria-label="Open Search">
+                    <i class="fas fa-search"></i>
+                </button> -->
+                <!-- Hamburger Menu Toggle Button -->
+                <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Main Navigation List -->
+                <ul id="main-menu">
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="support.html">التواصل والدعم</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-         <!-- Page Header -->
-        <section class="page-header">
-             <div class="container">
-                 <h1>Contact & Support</h1>
-            </div>
-        </section>
 
-        <!-- Support Content Section -->
-        <section class="content-section">
-            <div class="container" style="text-align: left; direction: ltr;"> <!-- Force LTR for content -->
-                <h2>Get In Touch</h2>
+    <main>
+        <!-- Page Header -->
+       <section class="page-header">
+            <div class="container">
+                <h1>يسعدنا تواصلك معنا</h1>
+           </div>
+       </section>
+
+       <!-- Support Content Section -->
+       <section class="content-section">
+           <div class="container">
+               <h2>كيف يمكننا المساعدة؟</h2>
+               <p>
+                   فريق KALEM Physics جاهز دائمًا للإجابة على استفساراتكم، استقبال اقتراحاتكم القيمة، أو مساعدتكم في حل أي مشكلة فنية قد تواجهونها أثناء استخدام المنصة. لا تترددوا في التواصل معنا عبر القنوات المفضلة لديكم.
+               </p>
+
+               <h2>قنوات التواصل</h2>
+               <div class="contact-info">
+                    <p><i class="fas fa-at"></i> <strong>البريد الإلكتروني:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdkakem@liberty.edu&su=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D9%87%D8%A7%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%0A%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A5%D9%84%D9%89%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D9%85%D8%AA%D8%B9%D9%84%D9%82%20%D8%A8%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics." target="_blank">sdkakem@liberty.edu</a>(للإستفسارات العامة والدعم الفني)</p>
+                    <p><i class="fab fa-telegram"></i> <strong>حسابنا على تيليجرام:</strong> <a href="https://t.me/sofianeklm" target="_blank" rel="noopener noreferrer">KALEM Physics Telegram</a> (للتحديثات السريعة والتواصل المباشر)</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> <strong>حسابنا على الواتساب:</strong> <a href="https://wa.me/message/WGLSISTQWPALO1" target="_blank" rel="noopener noreferrer">KALEM Physics WhatsApp</a> (للتحديثات السريعة والتواصل المباشر)</p>
+               </div>
+
+                <h2>الإبلاغ عن مشكلة فنية</h2>
                 <p>
-                    We're here to help! If you have any questions, suggestions, or encounter technical issues while using the platform, please don't hesitate to contact us through the following channels:
+                    في حال واجهت أي صعوبة تقنية، يرجى محاولة تزويدنا بأكبر قدر ممكن من التفاصيل (مثل نوع المشكلة، الصفحة التي ظهرت فيها، نوع جهازك ومتصفحك.) وإرسالها عبر البريد الإلكتروني للدعم الفني. هذا يساعدنا على تشخيص المشكلة وحلها بسرعة أكبر.
                 </p>
 
-                <h2>Contact Channels</h2>
-                <div class="contact-info">
-                     <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:sofianek208@gmail.com">sofianek208@gmail.com</a></p>
-                     <p><i class="fab fa-facebook-square"></i> <strong>Facebook Page:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics</a></p>
-                     <p><i class="fab fa-youtube-square"></i> <strong>YouTube Channel:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Channel</a></p>
-                     <p><i class="fab fa-telegram"></i> <strong>Telegram Account:</strong> <a href="#" target="_blank" rel="noopener noreferrer">KALEM Physics Telegram</a></p>
-                </div>
+<!-- support.html -->
 
-                 <h2>Technical Support</h2>
-                 <p>
-                     If you encounter any technical difficulties or problems accessing content, please try to provide us with as much detail as possible (e.g., the nature of the problem, the page where it occurred, your device type and browser, and a screenshot if possible) via the technical support email. This helps us diagnose and resolve the issue more quickly. We strive to respond to all inquiries as soon as possible.
-                 </p>
-
-                 <h2>Or Send a Direct Message:</h2>
+<h2>أو أرسل رسالة مباشرة:</h2>
                  <!-- **** MODIFIED FORM TAG for Netlify with Action Redirect **** -->
                  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
                      <!-- Hidden field for Netlify honeypot -->
@@ -61,40 +93,87 @@
 
                      <!-- Actual Form Fields -->
                      <div>
-                         <label for="name">Full Name</label>
-                         <input type="text" id="name" name="name" required>
-                     </div>
+                        <label for="name">الاسم الكامل</label>
+                        <!-- Ensure input has name="name" -->
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">البريد الإلكتروني (للرد عليك)</label>
+                        <!-- Ensure input has name="_replyto" for Formspree reply functionality -->
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div>
+                        <label for="subject">الموضوع</label>
+                         <!-- Ensure input has name="subject" -->
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
                      <div>
-                         <label for="email">Your Email (for reply)</label>
-                         <input type="email" id="email" name="email" required> <!-- Use name="email" -->
-                     </div>
-                     <div>
-                         <label for="subject">Subject</label>
-                         <input type="text" id="subject" name="subject" required>
-                     </div>
-                      <div>
-                         <label for="message">Message</label>
-                         <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
-                      </div>
+                        <label for="message">نص الرسالة</label>
+                        <!-- Ensure textarea has name="message" -->
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
 
                      <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i> Send Message
+                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
                      </button>
                  </form>
-                 <p><small>This form is processed by Netlify.</small></p> <!-- Updated note -->
-
             </div>
         </section>
     </main>
 
-     <footer class="site-footer">
-         <!-- Standard Footer Code (Remains in Arabic) -->
-         <div class="container"> <div class="footer-content"><div class="footer-about"><h4>حول KALEM Physics</h4><p>...</p></div><div class="footer-links"><h4>روابط مهمة</h4><ul><li>...</li></ul></div><div class="footer-social"><h4>تابعنا وتواصل</h4>...</div></div> <hr> </div>
-         <p class="copyright">KALEM Physics 2025. All rights reserved ©<br><span class="footer-legal-links"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></span></p>
-        <div class="footer-social footer-social-bottom"><h4>تابعنا وتواصل</h4>...</div>
-     </footer>
+    <footer>
 
-     <div id="searchOverlay" class="search-overlay">...</div>
-     <script src="script.js"></script>
+        <div class="container">
+            <center>
+                <!-- Copyright outside container, direct child of footer -->
+                 <div>
+                    <p><small><strong>&copy; KALEM Physics 2025.All rights reserved</strong></small></p>
+               </div>
+            </center>
+            <center>
+                <div class="footer-legal-links"> <!-- Optional wrapper for specific styling -->
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                </center>
+                <center>
+                            <!-- Social Block ADDED HERE -->
+                            <div class="footer-social footer-social-bottom"> <!-- Added extra class -->
+                                <a href="https://wa.me/message/WGLSISTQWPALO1" aria-label="Whatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://t.me/sofianeklm" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdkakem@liberty.edu&su=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D9%87%D8%A7%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%0A%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A5%D9%84%D9%89%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D9%85%D8%AA%D8%B9%D9%84%D9%82%20%D8%A8%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics." aria-label="Mail" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-at"></i>
+                                  </a>
+                                              <!-- End of Added Social Block -->
+                </center>
+        
+        
+        </footer>
+        
+        
+             <!-- Search Overlay -->
+             <div id="searchOverlay" class="search-overlay">
+                <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+                <div class="search-overlay-content">
+                    <form action="#" method="get" class="search-form">
+                        <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                        <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+                </div>
+            </div>
+            <!-- End Search Overlay -->
+            <!-- ... (Previous content including Search Overlay) ... -->
+        
+            <!-- Scroll to Top Button -->
+            <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="الصعود للأعلى" title="الصعود للأعلى">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <!-- End Scroll to Top Button -->
+        
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
