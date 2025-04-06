@@ -69,14 +69,58 @@
         </section>
     </main>
 
-     <footer class="site-footer">
-         <!-- Standard Footer Code -->
-         <div class="container"> <div class="footer-content">...</div> <hr> </div>
-         <p class="copyright">KALEM Physics 2025. All rights reserved ©<br><span class="footer-legal-links">...</span></p>
-        <div class="footer-social footer-social-bottom">...</div>
-     </footer>
+    <footer>
 
-     <div id="searchOverlay" class="search-overlay">...</div>
+        <div class="container">
+            <center>
+                <!-- Copyright outside container, direct child of footer -->
+                 <div>
+                    <p><small><strong>&copy; KALEM Physics 2025.All rights reserved</strong></small></p>
+               </div>
+            </center>
+            <center>
+                <div class="footer-legal-links"> <!-- Optional wrapper for specific styling -->
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                </center>
+                <center>
+                            <!-- Social Block ADDED HERE -->
+                            <div class="footer-social footer-social-bottom"> <!-- Added extra class -->
+                                <a href="https://wa.me/message/WGLSISTQWPALO1" aria-label="Whatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://t.me/sofianeklm" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdkakem@liberty.edu&su=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D9%87%D8%A7%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%0A%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A5%D9%84%D9%89%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83%D9%85%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D9%85%D8%AA%D8%B9%D9%84%D9%82%20%D8%A8%D9%85%D9%86%D8%B5%D8%A9%20KALEM%20Physics." aria-label="Mail" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-at"></i>
+                                  </a>
+                                              <!-- End of Added Social Block -->
+                </center>
+        
+        
+        </footer>
+        
+        
+             <!-- Search Overlay -->
+             <div id="searchOverlay" class="search-overlay">
+                <button class="icon-btn close-search" id="closeSearchBtn" aria-label="إغلاق البحث">×</button>
+                <div class="search-overlay-content">
+                    <form action="#" method="get" class="search-form">
+                        <input type="search" id="searchInput" name="q" placeholder="اكتب كلمة البحث هنا..." aria-label="Search Input" required>
+                        <button type="submit" class="search-submit-btn" aria-label="Submit Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <p class="search-hint">اضغط على Enter للبحث أو ESC للإغلاق</p>
+                </div>
+            </div>
+            <!-- End Search Overlay -->
+            <!-- ... (Previous content including Search Overlay) ... -->
+        
+            <!-- Scroll to Top Button -->
+            <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="الصعود للأعلى" title="الصعود للأعلى">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <!-- End Scroll to Top Button -->
+        
      <script src="script.js"></script>
 </body>
 </html>
