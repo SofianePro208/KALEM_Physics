@@ -359,5 +359,33 @@ if (notificationBar && closeNotificationBtn) {
 }
 // --- End Notification Bar Logic (Show Always + Animation + Autohide ONCE) ---
         
+function openEmail() {
+    const isMobile = /iPhone|iPad|iPod|Android|Mobile/i.test(navigator.userAgent);
+
+    const subject = encodeURIComponent("KALEM Physics Support");
+    const body = encodeURIComponent(`Dear KALEM Physics Support Team,
+
+I am experiencing the following issue on your platform:
+
+[Please describe the issue here]
+
+Device: [Your Device]
+Browser: [Your Browser]
+
+Thank you for your assistance.
+
+Best regards,
+[Your Name]`);
+
+    if (isMobile) {
+      // فتح تطبيق البريد الافتراضي على الهاتف
+      window.location.href = `mailto:sdkalem@liberty.edu?subject=${subject}&body=${body}`;
+    } else {
+      // فتح Gmail في المتصفح على الحاسوب
+      const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=sdkalem@liberty.edu&su=${subject}&body=${body}`;
+      window.open(gmailURL, '_blank');
+    }
+  }
+
 
 }); // End of DOMContentLoaded listener
