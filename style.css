@@ -506,10 +506,31 @@ body.dark-mode .btn-secondary:hover {
                 border-color var(--transition-speed) var(--transition-ease);
 }
 .feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--clr-primary-400);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--clr-primary-500);
 }
+
+/* ADD Internal Hover Effects */
+.feature-item:hover .icon-wrapper {
+    background-color: color-mix(in srgb, var(--clr-primary-500) 25%, transparent);
+    /* Optional: Scale icon slightly */
+    /* transform: scale(1.05); */
+}
+
+.feature-item:hover h3 a,
+.feature-item:hover h3 { /* Target h3 directly if no link */
+     color: var(--clr-primary-500);
+     transition: color var(--transition-speed) var(--transition-ease);
+}
+
+body.dark-mode .feature-item:hover h3 a,
+body.dark-mode .feature-item:hover h3 {
+     color: var(--clr-primary-400);
+}
+
+
+
 .feature-item .icon-wrapper {
     display: inline-flex;
     align-items: center;
@@ -2112,6 +2133,109 @@ body.dark-mode .assessment-category h3 {
 .requirements-list li p {
     flex-grow: 1;
 }
+
+
+/* --- Additions for Empty List Message --- */
+.empty-list-item {
+    background-color: color-mix(in srgb, var(--clr-secondary-400) 10%, transparent) !important; /* Use !important to override potential li background */
+    color: var(--clr-text-secondary);
+    font-style: italic;
+    padding: var(--spacing-6) !important; /* Ensure padding */
+    text-align: center;
+    border: 1px dashed var(--clr-border) !important; /* Dashed border */
+    box-shadow: none !important; /* No shadow */
+    display: flex !important; /* Use flex for icon alignment */
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3);
+}
+.empty-list-item:hover {
+    transform: none !important; /* Disable hover lift */
+    border-color: var(--clr-border) !important; /* Keep border color same on hover */
+}
+
+.empty-list-item i {
+    color: var(--clr-secondary-500);
+    font-size: var(--fs-lg);
+}
+
+/* --- End Empty List Message --- */
+
+
+
+
+/* --- Document/Software List Action Buttons --- */
+
+.document-list li,
+.software-list li {
+    /* Ensure list items can contain the actions div properly */
+    position: relative; /* Might be needed if actions are positioned absolutely */
+    padding-bottom: var(--spacing-8); /* Add more padding at the bottom for buttons */
+}
+
+.document-actions {
+    position: absolute; /* Position absolutely within the li */
+    bottom: var(--spacing-3); /* Position near the bottom */
+    left: var(--spacing-4);   /* Position on the left (visual right in RTL) */
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.share-btn {
+    /* Inherits icon-btn styles */
+    font-size: var(--fs-sm); /* Make share icon slightly smaller */
+    padding: var(--spacing-1);
+    color: var(--clr-secondary-500); /* Use secondary color */
+}
+body.dark-mode .share-btn {
+    color: var(--clr-secondary-400);
+}
+
+.share-btn:hover {
+    color: var(--clr-accent-500); /* Use accent color on hover */
+    background-color: color-mix(in srgb, var(--clr-accent-500) 10%, transparent);
+    border-color: color-mix(in srgb, var(--clr-accent-500) 20%, transparent);
+    transform: scale(1.1);
+}
+body.dark-mode .share-btn:hover {
+     color: var(--clr-accent-400);
+     background-color: color-mix(in srgb, var(--clr-accent-400) 10%, transparent);
+     border-color: color-mix(in srgb, var(--clr-accent-400) 20%, transparent);
+}
+
+/* Optional: Style for alternative download button if added */
+.download-btn-alt {
+    /* Styles similar to share-btn but maybe use primary color */
+    font-size: var(--fs-sm);
+    padding: var(--spacing-1);
+    color: var(--clr-secondary-500);
+}
+.download-btn-alt:hover {
+     color: var(--clr-primary-500);
+     background-color: color-mix(in srgb, var(--clr-primary-500) 10%, transparent);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .document-list li,
+    .software-list li {
+        padding-bottom: var(--spacing-10); /* More space on mobile */
+    }
+    .document-actions {
+        bottom: var(--spacing-2);
+        left: var(--spacing-2);
+    }
+     .share-btn, .download-btn-alt {
+        font-size: var(--fs-xs);
+    }
+}
+
+
+
+
+
+
 
 
 

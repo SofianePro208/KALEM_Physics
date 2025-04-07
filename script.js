@@ -388,4 +388,62 @@ Best regards,
   }
 
 
+
+    // --- Web Share API Logic for Share Buttons ---
+    const shareButtons = document.querySelectorAll('.share-btn');
+
+    if (navigator.share) { // Check if the browser supports the Web Share API
+        shareButtons.forEach(button => {
+            button.style.display = 'inline-flex'; // Make sure button is visible
+
+            button.addEventListener('click', async () => {
+                const title = button.dataset.shareTitle || document.title; // Get title from data attribute or page title
+                const url = button.dataset.shareUrl || window.location.href; // Get URL from data attribute or current page
+                const text = `تحقق من هذا المورد المفيد من KALEM Physics: ${title}`; // Optional text
+
+                try {
+                    await navigator.share({
+                        title: title,
+                        text: text,
+                        url: url,
+                    });
+                    console.log('Content shared successfully');
+                } catch (err) {
+                    console.error('Error sharing content:', err);
+                    // Optional: Implement fallback sharing links here if needed
+                    // alert(`حدث خطأ أثناء المشاركة: ${err.message}`);
+                }
+            });
+        });
+    } else {
+        // Fallback for browsers that don't support Web Share API
+        // Option 1: Hide the share buttons entirely
+        console.warn('Web Share API not supported. Hiding share buttons.');
+        shareButtons.forEach(button => {
+            button.style.display = 'none';
+        });
+
+        // Option 2: (More complex) Show links for specific platforms (FB, Twitter, WhatsApp)
+        // This would require modifying the HTML to include these links and showing/hiding them here.
+        // Example (conceptual - would need corresponding HTML):
+        // shareButtons.forEach(button => {
+        //   button.style.display = 'none'; // Hide the main share button
+        //   const fallbackLinks = button.closest('.document-actions').querySelector('.fallback-share-links');
+        //   if(fallbackLinks) fallbackLinks.style.display = 'flex';
+        // });
+    }
+    // --- End Web Share API Logic ---
+
+
+
+
+
+
+
+
+
+
+
+
+
 }); // End of DOMContentLoaded listener
