@@ -379,10 +379,10 @@ Best regards,
 
     if (isMobile) {
       // فتح تطبيق البريد الافتراضي على الهاتف
-      window.location.href = `mailto:sdkalem@liberty.edu?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:sofianek208@gmail.com?subject=${subject}&body=${body}`;
     } else {
       // فتح Gmail في المتصفح على الحاسوب
-      const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=sdkalem@liberty.edu&su=${subject}&body=${body}`;
+      const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=sofianek208@gmail.com&su=${subject}&body=${body}`;
       window.open(gmailURL, '_blank');
     }
   }
@@ -399,7 +399,7 @@ Best regards,
             button.addEventListener('click', async () => {
                 const title = button.dataset.shareTitle || document.title; // Get title from data attribute or page title
                 const url = button.dataset.shareUrl || window.location.href; // Get URL from data attribute or current page
-                const text = `تحقق من هذا المورد المفيد من KALEM Physics: ${title}`; // Optional text
+                const text = `KALEM Physics: ${title}`; // Optional text
 
                 try {
                     await navigator.share({

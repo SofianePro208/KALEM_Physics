@@ -2169,16 +2169,21 @@ body.dark-mode .assessment-category h3 {
 .document-list li,
 .software-list li {
     /* Ensure list items can contain the actions div properly */
-    position: relative; /* Might be needed if actions are positioned absolutely */
-    padding-bottom: var(--spacing-8); /* Add more padding at the bottom for buttons */
+    position: relative; /* Necessary for absolute positioning of children */
+    padding-bottom: var(--spacing-8); /* Ensure space at the bottom */
 }
 
 .document-actions {
-    position: absolute; /* Position absolutely within the li */
-    bottom: var(--spacing-3); /* Position near the bottom */
-    left: var(--spacing-4);   /* Position on the left (visual right in RTL) */
+    position: absolute;
+    bottom: var(--spacing-3);
+    /* === Force position to the Left === */
+    left: var(--spacing-4);   /* Explicitly set left position */
+    right: auto;            /* Unset right positioning */
+    /* ================================ */
     display: flex;
     gap: var(--spacing-2);
+    /* Ensure it doesn't get flipped by parent direction (though absolute positioning often handles this) */
+    direction: ltr; /* Force LTR for the button layout within actions div */
 }
 
 .share-btn {
@@ -2220,14 +2225,13 @@ body.dark-mode .share-btn:hover {
 @media (max-width: 767px) {
     .document-list li,
     .software-list li {
-        padding-bottom: var(--spacing-10); /* More space on mobile */
+        padding-bottom: var(--spacing-10);
     }
     .document-actions {
         bottom: var(--spacing-2);
+        /* Force left position on mobile too */
         left: var(--spacing-2);
-    }
-     .share-btn, .download-btn-alt {
-        font-size: var(--fs-xs);
+        right: auto;
     }
 }
 
