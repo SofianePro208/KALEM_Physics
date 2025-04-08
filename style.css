@@ -2295,6 +2295,44 @@ body.dark-mode .download-section .btn-download.btn-primary:hover { ... }
 /* ... rest of styles ... */
 
 
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height) - 200px); /* Adjust footer height estimate (200px) if needed */
+    text-align: center;
+    padding: var(--spacing-10) 0;
+}
+.error-code {
+    font-size: 6rem; /* Large 404 */
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-400);
+    margin-bottom: var(--spacing-2);
+    line-height: 1;
+}
+body.dark-mode .error-code {
+     color: var(--clr-primary-500);
+}
+.error-page-container h1 {
+     font-size: var(--fs-3xl);
+     color: var(--clr-text-primary);
+     margin-bottom: var(--spacing-4);
+}
+.error-page-container p {
+     font-size: var(--fs-lg);
+     color: var(--clr-text-secondary);
+     max-width: 50ch; /* Limit width of message */
+     margin-bottom: var(--spacing-8);
+}
+ .error-page-container .btn {
+     margin-top: var(--spacing-4);
+ }
+
+ @media (min-width: 768px) {
+    .error-code { font-size: 8rem; }
+    .error-page-container h1 { font-size: var(--fs-4xl); }
+ }
 
 
 
