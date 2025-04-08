@@ -343,7 +343,7 @@ if (notificationBar && closeNotificationBtn) {
 
             // !!! SET THE TIMER ONLY ONCE after it becomes visible !!!
             if (!autoHideTimer) { // Check if timer hasn't been set already
-                 autoHideTimer = setTimeout(hideNotificationBar, 10000); // 10 seconds
+                 autoHideTimer = setTimeout(hideNotificationBar, 5000); // 5 seconds
             }
 
         }, 50); // Small delay
