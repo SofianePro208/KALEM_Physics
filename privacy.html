@@ -60,8 +60,7 @@
      <!-- Privacy Content Section -->
      <section class="content-section" dir="ltr">
         <div class="container">
-            <p><strong>Last Updated:</strong> 2023-10-27</p> <!-- *** UPDATE THIS DATE *** -->
-
+            <p><strong>Last update:</strong> <span id="date"></span></p>
             <h2>Introduction</h2>
             <p>
                 Welcome to the KALEM Physics platform. We take the privacy of our visitors and users seriously and are committed to protecting your personal information. This Privacy Policy details the types of information we may collect from you or that you may provide when you visit or use the KALEM Physics platform and its educational services, and our practices for collecting, using, maintaining, protecting, and disclosing that information.
@@ -129,7 +128,7 @@
              <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> Via the <a href="support.html">Contact and Support</a> page.</p>
                 <!-- This link is specifically formatted to open Gmail compose view -->
-                <p><i class="fas fa-at"></i> directly via <a href="mailto:sofianek208@gmail.com?subject=KALEM%20Physics%20Support&body=Dear%20KALEM%20Physics%20Support%20Team,%0D%0A%0D%0AI%20am%20experiencing%20the%20following%20issue%20on%20your%20platform:%0D%0A%0D%0A[Please%20describe%20the%20issue%20here]%0D%0A%0D%0ADevice:%20[Your%20Device]%0D%0ABrowser:%20[Your%20Browser]%0D%0A%0D%0AThank%20you%20for%20your%20assistance.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]"  onclick="openEmail(); return false;">sofianek208@gmail.com</a>email</p>
+                <p><i class="fas fa-at"></i> Or directly via: <a href="mailto:sofianek208@gmail.com?subject=KALEM%20Physics%20Support&body=Dear%20KALEM%20Physics%20Support%20Team,%0D%0A%0D%0AI%20am%20experiencing%20the%20following%20issue%20on%20your%20platform:%0D%0A%0D%0A[Please%20describe%20the%20issue%20here]%0D%0A%0D%0ADevice:%20[Your%20Device]%0D%0ABrowser:%20[Your%20Browser]%0D%0A%0D%0AThank%20you%20for%20your%20assistance.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]"  onclick="openEmail(); return false;">Email</a></p>
                  <!-- *** UPDATE EMAIL *** -->
 
         </div>
@@ -187,6 +186,15 @@ Best regards,
                                                     window.open(gmailURL, '_blank');
                                                   }
                                                 }
+
+                                                const today = new Date();
+  const formattedDate = today.toLocaleDateString('en-GB', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  document.getElementById("date").innerText = formattedDate;
                                               </script>
                 </center>
         

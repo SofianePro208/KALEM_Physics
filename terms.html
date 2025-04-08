@@ -60,7 +60,7 @@
             <!-- Terms Content Section -->
             <section class="content-section" dir="ltr">
                 <div class="container">
-                     <p><strong>Last Updated:</strong> 2023-10-27</p> <!-- *** UPDATE THIS DATE *** -->
+                    <p><strong>Last update:</strong> <span id="date"></span></p>
 
                      <h2>1. Introduction and Acceptance of Terms</h2>
                      <p>
@@ -142,6 +142,15 @@ Best regards,
                                                     window.open(gmailURL, '_blank');
                                                   }
                                                 }
+
+                                                const today = new Date();
+  const formattedDate = today.toLocaleDateString('en-GB', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  document.getElementById("date").innerText = formattedDate;
                                               </script>
                                               <!-- End of Added Social Block -->
                 </center>
