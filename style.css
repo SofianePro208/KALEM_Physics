@@ -2335,7 +2335,13 @@ body.dark-mode .error-code {
  }
 
 
-
+.feature-link:focus,
+.feature-link:active,
+.feature-link:visited {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
 
 
 
