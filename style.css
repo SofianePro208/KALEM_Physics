@@ -1,4 +1,4 @@
-/* === KALEM Physics - Modern Redesign === */
+
 
 /* --- 1. Root Variables & Global Reset --- */
 :root {
@@ -2335,6 +2335,24 @@ body.dark-mode .error-code {
  }
 
 
+.feature-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    outline: none;
+}
+
+.feature-link:focus,
+.feature-link:active {
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+
+.feature-link:focus-visible {
+    outline: none;
+}
+    
 .feature-link:focus,
 .feature-link:active,
 .feature-link:visited {
