@@ -2362,7 +2362,27 @@ body.dark-mode .error-code {
 }
 
 
+.software-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
+.software-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.software-card:focus,
+.software-card:active {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
 
 
 
