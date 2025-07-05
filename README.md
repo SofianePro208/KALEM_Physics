@@ -28,54 +28,16 @@ It includes:
 ### 📂 Project Structure
 
 KALEM_Physics/
-├── index.html                            # Main homepage
-├── style.css                             # Global styling
-├── script.js                             # Main JavaScript logic
-├── 404.html                              # Custom error page
 │
-├── images/                               # Image assets
+├── index.html
 │
-├── pedagogy-docs.html                    # Pedagogical resources
-├── pedagogy-year1.html                   # 1st year menu
-├── pedagogy-year1-arts.html             ┐
-├── pedagogy-year1-arts-lesson.html     ┤ Year 1 lessons by stream
-├── pedagogy-year1-science.html         ┘
+├── style.css
 │
-├── pedagogy-year2.html                   # 2nd year menu
-├── pedagogy-year2-arts_phil.html       ┐
-├── pedagogy-year2-arts_phil-lesson.html├─ Year 2 lessons by stream
-├── pedagogy-year2-exp_science.html     ┤
-├── pedagogy-year2-exp_science-lesson.html
-├── pedagogy-year2-math_tech.html       ┘
-├── pedagogy-year2-math_tech-lesson.html
+├── script.js
 │
-├── pedagogy-year3.html                   # 3rd year menu
-├── pedagogy-year3-exp_science.html     ┐
-├── pedagogy-year3-exp_science-lesson.html
-├── pedagogy-year3-math_tech.html       ┘
-├── pedagogy-year3-math_tech-lesson.html
+├── images/
 │
-├── quizzes.html                          # Quiz portal
-├── quizzes-year3.html
-├── quizzes-year3-exp_science.html
-├── quizzes-year3-math_tech.html
-│
-├── software-tools.html                   # Educational software links
-├── download-7zip.html
-├── download-foxit.html
-├── download-geogebra.html
-├── download-libreoffice.html
-├── download-mathtype.html
-├── download-scidot.html
-│
-├── info-flashplayer.html                 # Info/help pages
-├── info-phet.html
-├── support.html
-├── privacy.html
-├── terms.html
-├── thank-you.html
-│
-└── README.md                             # This file
+└── README.md                        
 
 
 
