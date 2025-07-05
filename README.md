@@ -39,10 +39,10 @@ KALEM_Physics/
 
 ### 📬 Contact & Socials
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sofianeklm@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:kalemsofianeladjel@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sofianeklm)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/yourusername)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/213XXXXXXXXX)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/SofianeKLM)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/message/WGLSISTQWPALO1)
 
 ---
 
@@ -54,8 +54,6 @@ KALEM_Physics/
 
 ### 🌐 Related Links
 
-- 🔗 [Portfolio](https://self.so/SofianeKALEM)
 - 🔗 [LinkedIn](https://linkedin.com/in/sofianeklm)
-- 🔗 [Overleaf](https://www.overleaf.com/)
 
 ---
